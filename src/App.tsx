@@ -34,6 +34,7 @@ function App() {
 
   const mydata = [
     { label: 'Nama', value: 'Anugerah Gari' },
+    { label: 'NIM', value: '105022410012' },
     { label: 'Angkatan', value: '2024' },
     { label: 'Fakultas', value: 'Fakultas Ilmu Komputer' },
     { label: 'Program Studi', value: 'Informatika' },
