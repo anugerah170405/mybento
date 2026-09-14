@@ -1,14 +1,12 @@
 import {
   ArrowDown,
   ArrowUp,
-  ArrowUpRight,
 } from 'lucide-react'
 
 import './App.css'
 
 import { BentoCard } from './components/BentoCard'
 import { ButtonBox } from './components/ButtonBox'
-import { Logo } from './components/Logo'
 import { Logo2 } from './components/Logo2'
 import { MiniCard } from './components/MiniCard'
 import { ListTile } from './components/ListTile'
@@ -21,6 +19,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from 'react-icons/si'
+import { Navbar } from './components/Navbar'
 
 function App() {
   const buttons = [
@@ -81,11 +80,7 @@ function App() {
   return (
     <>
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between p-4">
-        <Logo size={24} />
-
-        <ButtonBox Icon={<ArrowUpRight />} />
-      </nav>
+      <Navbar/>
 
       {/* Main */}
       <main className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center gap-8 p-6">
